@@ -13,7 +13,7 @@ awsSecretAccessKey = 'raW243MehWVR26VrHV4KLAO6d+WQLOw6jWgjEppc'
 region = 'us-east-1'
 inputQueue = 'https://sqs.us-east-1.amazonaws.com/471112880649/1229143775-req-queue'
 outputQueue = 'https://sqs.us-east-1.amazonaws.com/471112880649/1229143775-resp-queue'
-ec2Client = boto3.client('ec2')
+ec2Client = boto3.client('ec2', region_name=region, aws_access_key_id=awsAccessKeyId, aws_secret_access_key=awsSecretAccessKey)
 sqsClient = boto3.client('sqs', region_name=region, aws_access_key_id=awsAccessKeyId, aws_secret_access_key=awsSecretAccessKey)
 autoscalingClient = boto3.client('autoscaling', region_name='us-east-1', aws_access_key_id=awsAccessKeyId, aws_secret_access_key=awsSecretAccessKey)
 
