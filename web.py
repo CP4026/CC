@@ -142,9 +142,9 @@ def scaling():
         print("... auto scaling ...")
         time.sleep(5)
 
-#scale_thread = threading.Thread(target=scaling)
-#scale_thread.daemon = True
-#scale_thread.start()
+scale_thread = threading.Thread(target=scaling)
+scale_thread.daemon = True
+scale_thread.start()
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8000)
