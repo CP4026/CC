@@ -7,7 +7,7 @@ import time
 
 app = Flask(__name__)
 res = dict()
-amiId = 'ami-0a66da35c5d7ddd0e'
+amiId = 'ami-031291c88603471ae'
 awsAccessKeyId = 'AKIAW3MEECIEVV73MZHY'
 awsSecretAccessKey = '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'
 region = 'us-east-1'
